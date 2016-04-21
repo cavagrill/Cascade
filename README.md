@@ -3,7 +3,7 @@
 Cascade was born from the idea that views can be built on top of views. It is quite common, as you will see with the demo data to have views built on top of views. 
 
 ## Create_silly_data.py
-The purpose of this file is to create some fake date and load it into a database using cavaconn, a connection tool. You may choose to
+The purpose of this file is to create some fake data and load it into a database using cavaconn, a connection tool. You may choose to
 download the files provided here and upload them yourself.
 
 ## album_summary
