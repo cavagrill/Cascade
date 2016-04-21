@@ -1,0 +1,1 @@
+select album,avg(duration) as avg_duration,min(duration) as shortest_song,max(duration) as longest_song,sum(case when explicit is False then 0 else 1 end), max(track_number) as record_count from tracks group by 1;
