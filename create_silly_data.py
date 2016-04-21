@@ -47,7 +47,7 @@ def get_tracks(album):
 artistsat930 = ['Chvrches','Tribal+Seeds','Good+Charlotte','Tokyo+Police+Club','Dirtyphonics&Funtcase','Murder+By+Death',
                 'Penguin+Prison','Titus+Andronicus','Parquet+Courts','Animal+Collective',
                 'Caveman','The+Sonics','Young+Thug','M.+Ward','Slander',
-                'Puddles+Pity+Party','POLIÇA','Bob+Mould','Elephant+Revival']
+                'Puddles+Pity+Party','Bob+Mould','Elephant+Revival']
 artists1 = [] 
 albums = []
 tracks = []
@@ -62,6 +62,6 @@ arts = pd.DataFrame(artists1)
 albumns = pd.DataFrame(albums)
 tracks_pd = pd.DataFrame(tracks)
 eng = cc.get_engine('server_info.yml', 'test_tables')
-arts.to_sql('artists',eng)
-albumns.to_sql('albums',eng)
-tracks_pd.to_sql('tracks',eng)
+arts.to_sql('artists',eng,if_exists='replace')
+albumns.to_sql('albums',eng,if_exists='replace')
+tracks_pd.to_sql('tracks',eng,if_exists='replace')
