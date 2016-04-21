@@ -40,7 +40,7 @@ Be sure to update rebirth.json
 ``` python cascade.py album_summary view album.sql test_tables ```
 
 # Cava Conn
-At Cava, we found it pretty cumbersome to store passwords in source control. So we build a package called CavaConn [https://github.com/cavagrill/cava_connect](url) it allows us to connect to databases using SQLAlchemy. We use CavaConn in create_silly_data.py to create fake data. We do that using the following piece of code
+At Cava, we found it pretty cumbersome to store passwords for our automated tasks. So we build a package called CavaConn [https://github.com/cavagrill/cava_connect](url) it allows us to connect to databases using SQLAlchemy, but as a single robot user. We use CavaConn in create_silly_data.py to create fake data. We do that using the following piece of code
 
 ```python
 eng = cc.get_engine('server_info.yml', 'test_tables')
