@@ -12,7 +12,7 @@ select album,avg(duration) as avg_duration,max(duration) as longest_song,sum(cas
         max(track_number) as record_count
         from tracks
         group by 1;
-        ```
+```
 
 ## artist_summary
 ```sql
@@ -29,7 +29,7 @@ on al.id=als.album
 group by 1,2,3;
 ```
 
-##  example
+##  Example
 
 ### using python
 Be sure to update rebirth.json
