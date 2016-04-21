@@ -43,6 +43,13 @@ Be sure to update rebirth.json
 At Cava, we found it pretty cumbersome to store passwords for our automated tasks. So we build a package called CavaConn [https://github.com/cavagrill/cava_connect](url) it allows us to connect to databases using SQLAlchemy, but as a single robot user. We use CavaConn in create_silly_data.py to create fake data. We do that using the following piece of code
 
 ```python
+import cavaconn as cc
+import pandas as pd
+
+arts = pd.DataFrame(artists1)
+albumns = pd.DataFrame(albums)
+tracks_pd = pd.DataFrame(tracks)
+
 eng = cc.get_engine('server_info.yml', 'test_tables')
 arts.to_sql('artists',eng,if_exists='replace')
 albumns.to_sql('albums',eng,if_exists='replace')
