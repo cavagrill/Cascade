@@ -46,9 +46,17 @@ At Cava, we found it pretty cumbersome to store passwords for our automated task
 import cavaconn as cc
 import pandas as pd
 
+###
+#Missing code in here
+###
+
 arts = pd.DataFrame(artists1)
 albumns = pd.DataFrame(albums)
 tracks_pd = pd.DataFrame(tracks)
+
+###
+#Missing code in here
+###
 
 eng = cc.get_engine('server_info.yml', 'test_tables')
 arts.to_sql('artists',eng,if_exists='replace')
