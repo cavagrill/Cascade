@@ -33,13 +33,14 @@ group by 1,2,3;
 
 ### using python
 Be sure to update rebirth.json
-` python cascade.py `
+
+`python cascade.py`
 
 ### using CLI
 
 ``` python cascade.py album_summary view album.sql test_tables ```
 
-# Cava Conn
+# CavaConn
 At Cava, we found it pretty cumbersome to store passwords for our automated tasks. So we build a package called CavaConn [https://github.com/cavagrill/cava_connect](url) it allows us to connect to databases using SQLAlchemy, but as a single robot user. We use CavaConn in create_silly_data.py to create fake data. We do that using the following piece of code
 
 ```python
